@@ -1,12 +1,16 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { StudentProfile } from './student-profile/student-profile';
+import { LoginStatus } from './login-status/login-status';
+import { ProductList } from './product-list/product-list';
+import { TaskManager } from './task-manager/task-manager';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [StudentProfile, LoginStatus, ProductList, TaskManager],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('angular-directives-project');
+export class AppComponent {
+  title = 'Angular Directives Demo';  
 }
