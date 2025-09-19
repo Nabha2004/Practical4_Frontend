@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./student-profile.css']
 })
 export class StudentProfile {
-  name = 'Parth';
+  name = 'Nabha';
   course = 'Frontend';
-  marks = 86;
+  marks = 92;
 }
